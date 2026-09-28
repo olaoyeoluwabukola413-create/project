@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="ade.css">
+</head>
+<body>
+    
+  <!-- NAVBAR -->
+  <header class="navbar">
+    <div class="logo">
+      <span class="logo-icon">W</span>
+      <span>TechFinder</span>
+    </div>
+
+    <nav>
+      <a href="#products">Products</a>
+      <a href="#solutions">Solutions</a>
+      <a href="#pricing">Pricing</a>
+      <a href="#resources">Resources</a>
+    </nav>
+
+    <div class="nav-buttons">
+      <button class="login">Log in</button>
+      <button class="signup">Get started</button>
+    </div>
+  </header>
+
+
+  <!-- HERO -->
+  <main>
+
+    <section class="hero">
+      <div class="hero-content">
+
+        <div class="badge">
+          TECHNOLOGY INTELLIGENCE
+        </div>
+
+        <h1>
+          Find out what websites
+          <span>are built with</span>
+        </h1>
+
+        <p>
+          Discover the technologies behind any website and turn
+          technology signals into useful business intelligence.
+        </p>
+
+        <div class="search-box">
+          <input
+            type="text"
+            id="websiteInput"
+            placeholder="Website URL, technology or email address"
+          >
+          <button onclick="analyzeWebsite()">
+            Analyze
+          </button>
+        </div>
+
+        <p id="result"></p>
+
+        <div class="hero-links">
+          <a href="#">Look up a website</a>
+          <a href="#">Analyze a list</a>
+          <a href="#">Use API</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- PRODUCT CARDS -->
+    <section class="products" id="products">
+
+      <div class="section-heading">
+        <span>PRODUCTS</span>
+        <h2>Technology intelligence for modern teams</h2>
+        <p>
+          Find accounts, understand technology stacks and monitor
+          changes across the web.
+        </p>
+      </div>
+
+      <div class="cards">
+
+        <div class="card">
+          <div class="card-icon">⌕</div>
+          <h3>Technology Lookup</h3>
+          <p>
+            Reveal the technologies, company details and useful
+            information behind any website.
+          </p>
+          <a href="#">Explore lookup →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">▦</div>
+          <h3>Lead Lists</h3>
+          <p>
+            Build targeted prospect lists based on technologies,
+            industries, traffic and geography.
+          </p>
+          <a href="#">Build a list →</a>
+        </div>
+
+        <div class="card">
+          <div class="card-icon">↗️</div>
+          <h3>Website Alerts</h3>
+          <p>
+            Monitor websites and discover technology migrations,
+            new tools and stack changes.
+          </p>
+          <a href="#">Track a website →</a>
+        </div>
+
+      </div>
+    </section>
+
+
+    <!-- LEAD LIST SECTION -->
+    <section class="feature">
+
+      <div class="feature-text">
+        <span>LEAD LISTS</span>
+
+        <h2>
+          Build prospect lists
+          your team can act on
+        </h2>
+
+        <p>
+          Target companies by technology, market, traffic and
+          geography. Create useful lists for sales and research.
+        </p>
+
+        <button class="dark-button">
+          Build a list
+        </button>
+      </div>
+
+      <div class="dashboard">
+
+        <div class="dashboard-header">
+          <strong>Technology</strong>
+          <span>Companies</span>
+        </div>
+
+        <div class="company">
+          <div class="company-logo">S</div>
+          <div>
+            <strong>Shopify</strong>
+            <small>Technology platform</small>
+          </div>
+          <span class="status">Very high</span>
+        </div>
+
+        <div class="company">
+          <div class="company-logo">W</div>
+          <div>
+            <strong>WordPress</strong>
+            <small>Content management</small>
+          </div>
+          <span class="status">High</span>
+        </div>
+
+        <div class="company">
+          <div class="company-logo">R</div>
+          <div>
+            <strong>React</strong>
+            <small>JavaScript framework</small>
+          </div>
+          <span class="status">High</span>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TECHNOLOGY LOOKUP -->
+    <section class="lookup" id="solutions">
+
+      <div class="lookup-content">
+
+        <span>TECHNOLOGY LOOKUP</span>
+
+        <h2>
+          Turn any website into
+          account intelligence
+        </h2>
+
+        <p>
+          Research companies, analyze domains and discover
+          technology stacks in seconds.
+        </p>
+
+        <div class="lookup-input">
+          <input
+            type="text"
+            placeholder="Enter a website..."
+          >
+          <button onclick="lookupSite()">
+            Look up
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- ALERTS -->
+    <section class="alerts">
+
+      <div class="alert-box">
+
+        <div class="alert-icon">◉</div>
+
+        <span>WEBSITE ALERTS</span>
+
+        <h2>
+          Know when important
+          websites change stack
+        </h2>
+
+        <p>
+          Monitor websites for migrations, new technologies
+          and other important changes.
+        </p>
+
+        <button class="outline-button">
+          Track a website
+        </button>
+
+      </div>
+
+    </section>
+
+
+    <!-- CTA -->
+    <section class="cta">
+
+      <h2>
+        Start discovering technology signals
+      </h2>
+
+      <p>
+        Explore websites, technologies and company data.
+      </p>
+
+      <button>
+        Get started
+      </button>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer>
+
+    <div class="footer-top">
+
+      <div class="footer-brand">
+        <div class="logo">
+          <span class="logo-icon">W</span>
+          <span>TechFinder</span>
+        </div>
+
+        <p>
+          Discover the technology behind websites.
+        </p>
+      </div>
+
+      <div>
+        <h4>Products</h4>
+        <a href="#">Lead lists</a>
+        <a href="#">Technology lookup</a>
+        <a href="#">Email verification</a>
+        <a href="#">Website alerts</a>
+      </div>
+
+      <div>
+        <h4>Resources</h4>
+        <a href="#">Technologies</a>
+        <a href="#">Articles</a>
+        <a href="#">Documentation</a>
+        <a href="#">FAQs</a>
+      </div>
+
+      <div>
+        <h4>Company</h4>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Privacy</a>
+        <a href="#">Terms</a>
+      </div>
+
+    </div>
+
+    <div class="footer-bottom">
+      © 2026 TechFinder. Frontend demo.
+    </div>
+
+  </footer>
+
+
+  <script src="script.js"></script>
+</body>
+</html>
